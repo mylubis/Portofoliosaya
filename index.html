@@ -1,134 +1,412 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBSITE BERITA SEDERHANA </title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header, nav, section, article, footer {
-            display: block;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #666;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-        .gallery img {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-        .blog-post {
-            margin-bottom: 30px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MidProjeks</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>
-        <h1>WEBSITE BERITA SEDERHANA</h1>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="home">
-        <div class="container">
-            <h2>Selamat datang diwebsite sederhana yang berisi tentang berita sederhana</h2>
-            <p>Berita Sederhana Dengan Konten Yang Menarik</p>
-        </div>
-    </section>
-    <section id="gallery">
-        <div class="container">
-            <h2>Gallery</h2>
-            <div class="gallery">
-                <img src="https://asset.kompas.com/crops/YVvnFwRaMUM22PSUiPomNlp0hbM=/0x0:900x600/750x500/data/photo/2023/02/19/63f20793a30b5.jpg" alt="Image 1">
-                <img src="https://akcdn.detik.net.id/community/media/visual/2024/03/21/semringah-prabowo-saat-pidato-kemenangan-pilpres-2024-3_169.jpeg?w=700&q=90" alt="Image 2">
-                <img src="https://akcdn.detik.net.id/community/media/visual/2024/03/19/esports_169.jpeg?w=700&q=90" alt="Image 3">
+    <!-- MENU AWAL -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Web Portofolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">TENTANG SAYA</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">KETERAMPILAN</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">GALERY</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">BLOG</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">KONTAK</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Awal -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Diri.jpg" alt="">
+            </div>
+            <h1>Michael Lubis</h1>
+            <h2>Mahasiswa</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
             </div>
         </div>
     </section>
-    <section id="blog">
-        <div class="container">
-            <h2>Blog</h2>
-            <article class="blog-post">
-                <h3>Prediksi Timnas Vietnam vs Timnas Indonesia 26 Maret 2024</h3>
-                <p>     Timnas Vietnam akan menjamu Timnas Indonesia pada matchday keempat Grup F Kualifikasi Piala Dunia 2026 di Stadion My Dinh, Selasa 26 Maret 2024. Laga antara Vietnam vs Indonesia akan dimainkan mulai pukul 19.00 WIB.
-                    Indonesia menang 1-0 atas Vietnam pada duel matchday ketiga, 21 Maret lalu, di Stadion Gelora Bung Karno. Hasil ini membuat Indonesia berada di posisi kedua klasemen Grup F dengan raihan empat poin dari tiga laga.                    
-                    Sementara, Vietnam kini berada di posisi ketiga klasemen dengan tiga poin. Bagi Vietnam, kemenangan atas Indonesia bisa membuat mereka kembali berada di posisi kedua sekaligus mengakhiri rangkaian kekalahan enam laga beruntun.
-                <p>
-                        Kubu Vietnam berada dalam tekanan karena tak kunjung meraih hasil baik. Performa minor di lini belakang perlu diperbaiki dengan segera. Sebagai catatan, Vietnam tidak pernah nirbobol pada enam laga terakhir di semua ajang.
-                    Kubu Indonesia sedikit berada di atas angin, dengan dua kemenangan beruntun atas Vietnam. Namun, bakal absennya sejumlah pemain, ditambah kabar tidak bugarnya beberapa lainnya, bisa berdampak pada kesiapan mental pasukan Shin Tae-yong.
-                    Prediksi Skor: Vietnam 2-2 Indonesia.
-                </p>
-                </p>
-            </article>
-            <article class="blog-post">
-                <h3>Baca artikel CNN Indonesia "KPU Resmi Tetapkan Prabowo-Gibran Menang Pilpres 2024</h3>
-                <p>Komisi Pemilihan Umum (KPU) menetapkan pasangan calon nomor urut 2 Prabowo Subianto-Gibran Rakabuming Raka sebagai pemenang dalam Pilpres 2024.
-                    Prabowo-Gibran memperoleh 96.214.691 suara sah. Perolehan suara pasangan ini setara dengan 58,6 persen dari total suara nasional 164.227.475.
-                    "Jumlah suara sah pasangan calon presiden dan calon presiden Prabowo Subianto dan Gibran Rakabuming Raka sebanyak 96.214.691," kata Ketua KPU RI Hasyim Asy'ari di Kantor KPU RI, Jakarta, Rabu (20/3).</p>
-            </article>
-            <article class="blog-post">
-                <h3>Indonesia Juara di Dunia Sepakbola Virtual</h3>
-                <p>Digelar di Shanghai University of Finance and Economics Stadium, Shanghai, China, Minggu malam (17/3), tim Indonesia yang diwakili oleh Ahmad Nurhakim (ID.GarudaFM) dan Dennis Al Farizi Wahdiat Putra (ID.hazard) atau yang lebih dikenal sebagai Kumaaa berhasil mengungguli tim tuan rumah CN VGD.
-                    "Terima kasih kami ucapkan kepada orang tua dan keluarga yang selalu mendukung dalam kondisi apa pun, baik menang maupun kalah, komunitas FC Mobile Community Indonesia, followers dan subscribers kanal YouTube GarudaFM, serta teman-teman yang telah mempercayakan kami sebagai perwakilan dari Indonesia dan senantiasa mendukung kami dengan komentar positif," ujar Ahmad Nurhakim alias GarudaFM dalam keterangan pers. 
-                    </p>
-            </article>
+
+    <!-- Tentang Saya -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Tentang Saya</h2>
+            <p><span>Halo, saya Michael Yusuf Lubis.</span> Saya adalah seorang mahasiswa smester 4, Yang Berusia 20 tahun, Saya bertempat tinggal di Binjai, sumatra utara. Saya anak terakhir dari 5 bersaudara antara 3 laki-laki dan 2 perempuan, 
+            saya suka dengan perograming dan menurut saya perograming itu rumit dan saya sangat tertantang untuk mempelajarinya.</p>
+
+            <div class="fila">
+                <!-- data pribadi -->
+                <div class="col">
+                    <h3>Data Pribadi</h3>
+                    <ul>
+                        <li>
+                            <strong>Kelahiran</strong>
+                            17-06-2004
+                        </li>
+                        <li>
+                            <strong>Telepon</strong>
+                            082283633636
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            Michaelyusuflubis@gmail.com
+                        </li>
+                        <li>
+                            <strong>Hoby</strong>
+                            Jalan-Jalan dan olahraga
+                        </li>
+                        <li>
+                            <strong>Alamat</strong>
+                            Binjai, Indonesia
+                        </li>
+                        <li>
+                            <strong>Pekerjaan</strong>
+                            <span>Mahasiswa</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Kegemaran -->
+                <div class="col">
+                    <h3>Kegemaran</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Game online</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVELING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>MENDAKI</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BACA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>BERKENDARA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTO</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
         </div>
     </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Silahkan Hubungi Kami:</p>
-            <form action="#" method="post">
-                <label for="names">Name:</label><br>
-                <input type="text" id="nameds" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="emaidl" name="email"><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="mesdsage"></textarea><br>
-                <input type="submit" value="Submdit">
-            </form>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>KETERAMPILAN</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Skill Mekanik</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Skil Pribadi</h3>
+                    <div class="skill">
+                        <span>Bicara</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Bekerja</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Kreatif</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Edukasi</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Kerjasama</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>GALERY BERITA</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="https://akcdn.detik.net.id/community/media/visual/2024/03/21/semringah-prabowo-saat-pidato-kemenangan-pilpres-2024-3_169.jpeg?w=700&q=90" alt="">
+                    <div class="overlay">
+                        <h3>KPU Resmi Tetapkan Prabowo-Gibran Menang Pilpres 2024</h3>
+                        <p>Detik.com</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/G1.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Indonesia Juara di Dunia Sepakbola Virtual</h3>
+                        <p>CNN</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/G2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Retweet Baru Twitter Dengan Penghitung Komentar Kini Tersedia Di Android & Web</h3>
+                        <p>Kompas.com</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Kopi Modern Yang Sangat Populer Di Kalangan Masyarakat</h3>
+                        <p>Formadiksi UM</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Pentingnya Pemrograman dalam Era Digital</h3>
+                        <p>Medium</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Kegagalan Roket Antariksa dari Seluruh Dunia</h3>
+                        <p>Liputan6.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>BLOG BERITA</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Terbaru</h3>
+                    <div class="item izq">
+                        <h4>KPU Resmi Tetapkan Prabowo-Gibran Menang Pilpres 2024</h4>
+                        <span class="casa">Detik.com</span>
+                        <p>Komisi Pemilihan Umum (KPU) menetapkan pasangan calon nomor urut 2 Prabowo Subianto-Gibran Rakabuming Raka sebagai pemenang dalam Pilpres 2024. Prabowo-Gibran memperoleh 96.214.691 suara sah. Perolehan suara pasangan ini setara dengan 58,6 persen dari total suara nasional 164.227.475. "Jumlah suara sah pasangan calon presiden dan calon presiden Prabowo Subianto dan Gibran Rakabuming Raka sebanyak 96.214.691," kata Ketua KPU RI Hasyim Asy'ari di Kantor KPU RI, Jakarta, Rabu (20/3).</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Indonesia Juara di Dunia Sepakbola Virtual</h4>
+                        <span class="casa">CNN</span>
+                        <p>Digelar di Shanghai University of Finance and Economics Stadium, Shanghai, China, Minggu malam (17/3), tim Indonesia yang diwakili oleh Ahmad Nurhakim (ID.GarudaFM) dan Dennis Al Farizi Wahdiat Putra (ID.hazard) atau yang lebih dikenal sebagai Kumaaa berhasil mengungguli tim tuan rumah CN VGD. "Terima kasih kami ucapkan kepada orang tua dan keluarga yang selalu mendukung dalam kondisi apa pun, baik menang maupun kalah, komunitas FC Mobile Community Indonesia, followers dan subscribers kanal YouTube GarudaFM, serta teman-teman yang telah mempercayakan kami sebagai perwakilan dari Indonesia dan senantiasa mendukung kami dengan komentar positif," ujar Ahmad Nurhakim alias GarudaFM dalam keterangan pers.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Retweet Baru Twitter Dengan Penghitung Komentar Kini Tersedia Di Android & Web</h4>
+                        <span class="casa">Kompas.com</span>
+                        <p> fitur Retweet seakan-akan hilang dari Twitter. Ya, karena ketika saya menekan tombol Retweet, tampilan malah beralih ke mode Retweet with Comments. Apakah ini sebuah error? Ternyata tidak.
+
+                            Akun Twitter Support dan Twitter Indonesia membagikan cuitan bahwa fitur ini dibuat untuk memastikan pengguna memahami konteks dan konten dari sebuah cuitan, sebelum dibagikan dengan fitur Retweet. Twitter Support sebelumnya juga menjelaskan bahwa fitur ini hanya akan bersifat sementara. Fitur ini dibuat untuk pendekatan Twitter dalam membatasi penyebaran informasi yang menyesatkan, selama #Election2020 alias pemilihan umum di Amerika Serikat.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Terviral</h3>
+                    <div class="item der">
+                        <h4>Kopi Modern Yang Sangat Populer Di Kalangan Masyarakat</h4>
+                        <span class="casa">Formadiksi UM</span>
+                        <p>Jika melihat tren kopi beberapa tahun belakangan, kopi susu yang dipadukan dengan gula aren menjadi salah satu rasa kopi yang disukai banyak orang. Kemudian tren kopi berkembang karena popularitas drama Korea yang kerap memperlihatkan aktor dan aktrisnya membeli kopi Americano di beberapa adegan. Hal itu juga membuat kopi Americano menjadi cukup populer belakangan. Namun di tahun 2022, seperti apa tren rasa kopi yang tengah diminati? "Tapi kalau melihat favoritnya tren minum kopi ini masih yang berbasis susu," ungkap dia kepada Kompas.com, di Jakarta, baru-baru ini. Beberapa rasa kopi berbasis susu yang dimaksud sebetulnya masih sama seperti tren minum kopi beberapa tahun ke belakang, yaitu cappuccino dan latte.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Pentingnya Pemrograman dalam Era Digital</h4>
+                        <span class="casa">Medium</span>
+                        <p>Pemrograman adalah keahlian yang luar biasa penting dalam era digital ini. Dari inovasi teknologi hingga transformasi industri, pemrograman memainkan peran kunci dalam membentuk dunia modern yang terus berkembang. Selain manfaat praktisnya, pemrograman juga memungkinkan kreativitas, inovasi, dan kemajuan di berbagai bidang.
+
+                            Bagi siapa pun yang tertarik untuk memahami dan menguasai teknologi, mempelajari pemrograman adalah langkah yang tepat. Dengan sumber daya belajar yang semakin mudah diakses, siapa pun dapat mengembangkan keterampilan pemrograman yang berharga dan memberdayakan diri untuk menghadapi masa depan yang penuh dengan teknologi.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Kegagalan Roket Antariksa dari Seluruh Dunia</h4>
+                        <span class="casa">Liputan6.com</span>
+                        <p> Roket H3 yang dirancang Aerospace Exploration Agency (JAXA) bersama mitra komersialnya, Mitsubishi Heavy Industries kembali mengalami kegagalan untuk mencapai orbit Bumi. Kegagalan ini mengingatkan kita pada upaya penerbangan pertama di mana kendaraan itu tetap berada di tempatnya. Meski begitu upaya kedua ini lebih berhasil daripada yang pertama, karena roket mampu lepas landas. Tetapi Pusat Antariksa Tanegashima memutuskan bahwa roket tersebut "tidak memiliki kemungkinan untuk mencapai misi" dan mereka mengeluarkan "perintah penghancuran". Masalah tampaknya muncul antara akhir tahap pertama dan pemisahan roket serta pengapian tahap kedua roket. Menurut data kecepatan yang diberikan selama acara livestream JAXA, kecepatan roket mulai menurun setelah melepaskan mesin tahap pertamanya. Seandainya mesin tahap kedua bekerja seperti yang diharapkan, roket seharusnya terus berakselerasi.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- isi kontak -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>KONTAK</h2>
+            <div class="fila">
+                <!-- data -->
+                <div class="col">
+                    <input type="text" placeholder="Nama">
+                    <input type="text" placeholder="No Telp">
+                    <input type="text" placeholder="Alamat">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Pesan"></textarea>
+                    <button>
+                       Kirim Pesan<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- alamat -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Binjai 159, Sumatra Utara
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Telp: 082283633636 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: Michaelyusuflubis@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
     <footer>
-        <p>WEBSITE BERITA SEDERHANA</p>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
